@@ -4,7 +4,7 @@
 
 
 <template>
-<div>
+<div class="about">
     <h2>About</h2>
     <p>Welcome to Bandito, the premier shopping site for all of raccoonkind.</p>
     <h3>About Us</h3>
@@ -26,5 +26,9 @@ h2, h3{
 }
 p{
     margin: 20px 0;
+}
+.about{
+    flex: auto;
+    align-content: center;
 }
 </style>
