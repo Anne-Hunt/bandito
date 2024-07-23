@@ -1,12 +1,12 @@
 <script setup>
-
+const {id} = useRoute().params
 </script>
 
 
 <template>
 <div>
-    <h2>Welcome!</h2>
-    <p>Welcome to Bandito, the premier shopping site for all of raccoonkind.</p>
+    <h2>Product Details</h2>
+    <p>{{id}}</p>
 </div>
 </template>
 
