@@ -25,5 +25,8 @@
 .router-link-exact-active{
     color: green;
 }
+/* .router-link{
+    color: black;
+} */
 
 </style>
