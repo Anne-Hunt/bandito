@@ -19,7 +19,9 @@ if(!product.value){
         <p class="text-xl my-7">Price - ${{ product.price }}</p>
         <h3 class="font-bold border-b-2 mb-4 pb-2">Description:</h3>
         <p class="mb-7">{{ product.description }}</p>
-        <button class="btn my-7 text-center">Add to Cart</button>
+        <div class="flex justify-end">
+            <button class="btn my-7 flex"><MdiIcon icon="mdiCartArrowDown" class="my-auto mr-1 text-white font-bold text-xl"></MdiIcon>Add to Cart</button>
+        </div>
     </div>
 </section>
 </template>

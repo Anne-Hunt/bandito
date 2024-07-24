@@ -16,6 +16,11 @@ body {
         @apply bg-white p-3 rounded-md shadow-md h-full
     }
 
+    .thumbimg {
+        height: 120px;
+        align-content: center;
+    }
+
     .thumbnail {
         max-height: 120px;
         max-width: 70%;
