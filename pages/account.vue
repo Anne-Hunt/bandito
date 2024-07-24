@@ -10,6 +10,12 @@ definePageMeta({
     <h2>Welcome!</h2>
     <p>Welcome to Bandito, the premier shopping site for all of raccoonkind.</p>
 </div>
+<div class="card">
+    <div v-if="account" class="">Hello!</div>
+    <div v-else>
+        <p class="btn">Log In</p>
+    </div>
+</div>
 </template>
 
 

@@ -12,6 +12,7 @@
             <li><NuxtLink to="/about">About</NuxtLink></li>
             <li><NuxtLink to="/products" class="btn">Products</NuxtLink></li>
             <li v-if="account"><NuxtLink to="/account">Account</NuxtLink></li>
+            <li v-else><NuxtLink to="/account">Sign In</NuxtLink></li>
         </ul>
     </nav>
 </header>
