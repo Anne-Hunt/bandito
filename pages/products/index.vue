@@ -13,8 +13,8 @@ const {data: products} = await useFetch('https://fakestoreapi.com/products')
     <p>Welcome to Bandito, the premier shopping site for all of raccoonkind.</p>
 </div>
 <div class="grid grid-cols-5 gap-5">
-<div v-for="product in products" :key="id" class="border border-slate-900 rounded-md shadow-sm p-2">
-<product></product>
+<div v-for="product in products" :key="id">
+<product :product="product"></product>
 </div>
 </div>
 </template>
@@ -26,10 +26,5 @@ h2{
 }
 p{
     margin: 20px 0;
-}
-
-img{
-    max-width: 100%;
-    max-height: 30dvh;
 }
 </style>

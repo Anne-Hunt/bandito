@@ -9,6 +9,16 @@ body {
 
 @layer components {
     .btn {
-        @apply bg-black p-3 rounded-md text-sm text-white;
+        @apply bg-green-700 p-3 rounded-md text-sm text-white;
+    }
+
+    .card {
+        @apply bg-white p-3 rounded-md shadow-md h-full
+    }
+
+    .thumbnail {
+        max-height: 120px;
+        max-width: 70%;
+        margin: 0 auto;
     }
 }

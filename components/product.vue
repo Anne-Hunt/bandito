@@ -1,15 +1,18 @@
 <script setup>
 
-
+const {product} = defineProps(['product'])
 </script>
 
 
 <template>
-<div>
+<div class="card text-center">
     <NuxtLink :to="`/products/${product.id}`" class="flex-row">
-        <img :src="product.image" :alt="product.title" class="flex justify-self-center">
-        <p class="truncate">{{ product.title }}</p>
-        <p class="text-end">${{ product.price }}</p>
+        <img :src="product.image" :alt="product.title" class="thumbnail">
+        <p class="truncate font-semibold text-slate-700">{{ product.title }}</p>
+        <p class="decimal">${{ product.price }}</p>
+    </NuxtLink :to="`/products/${product.id}`">
+    <NuxtLink :to="`/products/${product.id}`" class="">
+        <p class="btn mt-9 mx-5">View Details</p>
     </NuxtLink>
 </div>
 </template>
