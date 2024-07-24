@@ -9,8 +9,17 @@ const {data: products} = await useFetch('https://fakestoreapi.com/products')
 
 <template>
 <div>
-    <h2>Welcome!</h2>
+    <h2>Products by Bandito</h2>
     <p>Welcome to Bandito, the premier shopping site for all of raccoonkind.</p>
+</div>
+<div class="grid grid-cols-5 gap-5">
+<div v-for="product in products" :key="id" class="border border-slate-900 rounded-md shadow-sm p-2">
+    <NuxtLink :to="`/products/${id}`" class="flex-row">
+        <img :src="product.image" :alt="product.title" class="flex justify-self-center">
+        <p class="truncate">{{ product.title }}</p>
+        <p class="text-end">${{ product.price }}</p>
+    </NuxtLink>
+</div>
 </div>
 </template>
 
@@ -21,5 +30,10 @@ h2{
 }
 p{
     margin: 20px 0;
+}
+
+img{
+    max-width: 100%;
+    max-height: 30dvh;
 }
 </style>
