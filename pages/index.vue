@@ -1,5 +1,7 @@
 <script setup>
-
+useHead({ 
+    title: 'Bandito - Home Sweet Dumpster'
+})
 </script>
 
 

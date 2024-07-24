@@ -3,10 +3,15 @@ definePageMeta({
     layout: 'products'
 })
 
+
 </script>
 
 
 <template>
+        <!-- <head>
+        <title>Bandito - {{ product.title }}</title>
+        <meta name="description" :content="product.description"/>
+    </head> -->
 <div class="card">
     <productdetails>
         

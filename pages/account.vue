@@ -2,6 +2,10 @@
 definePageMeta({
     layout: 'account'
 })
+
+useHead({ 
+    title: 'Bandito - Your Account'
+})
 </script>
 
 

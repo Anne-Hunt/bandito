@@ -4,6 +4,10 @@ definePageMeta({
 })
 
 const {data: products} = await useFetch('https://fakestoreapi.com/products')
+
+useHead({ 
+    title: 'Bandito - Products and Merch'
+})
 </script>
 
 
