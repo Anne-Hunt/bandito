@@ -4,9 +4,15 @@
 
 
 <template>
-    <header class="shadow-sm bg-white">
-        <nav class="container mx-auto p-4 justify-between">
-            <NuxtLink to="/"><i class="mdi mdi-package-variant"></i></NuxtLink>
+    <header class="shadow-sm bg-slate-300">
+        <nav class="container mx-auto p-4 flex justify-between">
+            <NuxtLink to="/" class="text-xl font-bold flex"><MdiIcon icon="mdiDominoMask" class="my-auto mr-1 text-black"></MdiIcon> <span>BANDITO</span></NuxtLink>
+            <ul>
+                <li>
+                    <li v-if="account"><NuxtLink to="/account">Account</NuxtLink></li>
+            <li v-else><NuxtLink to="/account">Sign In</NuxtLink></li>
+                </li>
+            </ul>
         </nav>
     </header>
 
