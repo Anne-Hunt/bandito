@@ -7,7 +7,11 @@ definePageMeta({
 
 
 <template>
-<productdetails></productdetails>
+<div class="card">
+    <productdetails>
+        
+    </productdetails>
+</div>
 </template>
 
 
