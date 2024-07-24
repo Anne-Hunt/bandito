@@ -9,6 +9,6 @@ body {
 
 @layer components {
     .btn {
-        @apply bg-green text-white p-3 rounded-md text-sm text-white;
+        @apply bg-black p-3 rounded-md text-sm text-white;
     }
 }
