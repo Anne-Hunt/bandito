@@ -3,14 +3,14 @@ definePageMeta({
     layout: 'products'
 })
 const {id} = useRoute().params
+const uri = 'https://fakestoreapi.com/products/' + id
+const {data: product} = await useFetch(uri)
+
 </script>
 
 
 <template>
-<div>
-    <h2>Product Details</h2>
-    <p>{{id}}</p>
-</div>
+<productdetails></productdetails>
 </template>
 
 
