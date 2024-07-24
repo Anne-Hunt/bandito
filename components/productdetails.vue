@@ -1,8 +1,11 @@
 <script setup>
 const {id} = useRoute().params
 const item = 'https://fakestoreapi.com/products/' + id
-const {data: product} = await useFetch(item)
+const {data: product} = await useFetch(item, {key:id})
 
+if(!product.value){
+    throw createError({statusCode: 404, message: 'Unable to find product'})
+}
 </script>
 
 <template>
