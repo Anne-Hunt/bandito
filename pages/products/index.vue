@@ -14,11 +14,7 @@ const {data: products} = await useFetch('https://fakestoreapi.com/products')
 </div>
 <div class="grid grid-cols-5 gap-5">
 <div v-for="product in products" :key="id" class="border border-slate-900 rounded-md shadow-sm p-2">
-    <NuxtLink :to="`/products/${id}`" class="flex-row">
-        <img :src="product.image" :alt="product.title" class="flex justify-self-center">
-        <p class="truncate">{{ product.title }}</p>
-        <p class="text-end">${{ product.price }}</p>
-    </NuxtLink>
+<product></product>
 </div>
 </div>
 </template>
