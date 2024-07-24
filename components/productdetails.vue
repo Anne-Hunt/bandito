@@ -4,7 +4,7 @@ const item = 'https://fakestoreapi.com/products/' + id
 const {data: product} = await useFetch(item, {key:id})
 
 if(!product.value){
-    throw createError({statusCode: 404, message: 'Unable to find product'})
+    throw createError({statusCode: 404, message: 'Unable to find product', fatal: true})
 }
 </script>
 
@@ -19,7 +19,7 @@ if(!product.value){
         <p class="text-xl my-7">Price - ${{ product.price }}</p>
         <h3 class="font-bold border-b-2 mb-4 pb-2">Description:</h3>
         <p class="mb-7">{{ product.description }}</p>
-        <p class="btn my-7 text-center mx-20">Add to Cart</p>
+        <button class="btn my-7 text-center">Add to Cart</button>
     </div>
 </section>
 </template>

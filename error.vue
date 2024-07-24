@@ -1,6 +1,10 @@
 <script setup>
 
 defineProps(['error'])
+
+function clear(){
+    clearError({redirect: '/'})
+}
 </script>
 
 
@@ -13,15 +17,13 @@ defineProps(['error'])
         </ul>
     </nav>
 </header>
-<body class="fill px-10">
+<body class="text-center px-10">
     <div class="mt-8 card text-center mx-auto">
         <p class="my-8 text-7xl font-semibold">ERROR {{error.statusCode}}</p>
         <h2 class="my-7 text-6xl">Whoooopsies!</h2>
-        <p>{{error.message}}</p>
-        <NuxtLink to="/" class="">
-            <p class="btn my-10 mx-10 text-xl">Return Home</p>
-        </NuxtLink>
+        <p class="mb-10">{{error.message}} <i class="mdi mdi-emoticon-sad-outline"></i></p>
     </div>
+        <button class="btn my-10 text-xl" @click="clear">Return Home</button>
 </body>
 </template>
 
