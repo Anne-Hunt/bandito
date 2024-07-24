@@ -4,19 +4,19 @@
 
 
 <template>
-    <header>
-        <nav>
+    <header class="shadow-sm bg-white">
+        <nav class="container mx-auto p-4 justify-between">
             <NuxtLink to="/"><i class="mdi mdi-package-variant"></i></NuxtLink>
         </nav>
     </header>
 
     <body>
-        <div class="">
+        <div class="container mx-auto p-4">
             <slot></slot>
         </div>
     </body>
-    <footer>
-        <ul>
+    <footer class="container mx-auto p-4 flex justify-between border-t-3">
+        <ul class="flex gap-4">
             <li>
                 <NuxtLink to="/">Home</NuxtLink>
             </li>
