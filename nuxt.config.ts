@@ -16,4 +16,13 @@ export default defineNuxtConfig({
       ]
     }
   }
+  // auth: {
+  //   strategies: {
+  //     auth0: {
+  //       domain: 'domain.auth0.com',
+  //       clientId: '....',
+  //       audience: 'https://my-api-domain.com/'
+  //     }
+  //   }
+  // }
 })
