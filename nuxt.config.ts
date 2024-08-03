@@ -15,13 +15,18 @@ export default defineNuxtConfig({
         }
       ]
     }
-  }
+
+  },
+  runtimeConfig: {
+    connectionString: process.env.CONNECTION_STRING,
+
+  },
   // auth: {
   //   strategies: {
   //     auth0: {
-  //       domain: 'domain.auth0.com',
-  //       clientId: '....',
-  //       audience: 'https://my-api-domain.com/'
+  //       domain: process.env.AUTH_DOMAIN,
+  //       clientId: process.env.AUTH_CLIENT_ID,
+  //       audience: process.env.AUTH_AUDIENCE
   //     }
   //   }
   // }
