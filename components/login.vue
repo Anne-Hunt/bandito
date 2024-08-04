@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div>
         <a v-if="!isAuthenticated" @click="login">
             <slot>Log In</slot>
@@ -34,4 +34,4 @@ const logout = () => {
     navigateTo('/')
     auth0?.logout()
 }
-</script> -->
+</script>

@@ -4,7 +4,8 @@ const ReviewSchema = new Schema({
     creatorId: { type: Schema.ObjectId, required: true, ref: 'Account' },
     productID: { type: Schema.ObjectId, required: true, ref: 'Product' },
     description: { String, required: true },
-    rating: { Number, required: true }
+    rating: { Number, required: true },
+    date: { Date, required: true }
 }, {
     timestamps: true, toJSON: { virtuals: true }
 });
