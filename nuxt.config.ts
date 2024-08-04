@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', "nuxt-mdi", "nuxt-server-utils"],
+  modules: ['@nuxtjs/tailwindcss', "nuxt-mdi"],
   app: {
     head: {
       title: 'Bandito',
