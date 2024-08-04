@@ -3,37 +3,24 @@ definePageMeta({
     layout: 'account',
     middleware: ["auth"]
 })
-const {data: purchases} = await useFetch('/api/raccoon/account/purchase')
-const {data: reviews} = await useFetch('/api/raccoon/account/reviews')
+const {data: purchase} = await useFetch(`/api/raccoon/account/purchase/${purchase.id}`)
+
 useHead({
-    title: 'Bandito - Your Account'
+    title: 'Bandito - Your Purchases'
 })
 </script>
 
 
 <template>
     <div>
-        <div class="card">
-            <div v-if="account" class="p-5">
-                <h2 class="text-2xl">Welcome {{account.name}}!</h2>
-                <p>View your previous purchases and reviews below.</p>
+        <div>
+        <h4>Purchase #{{ purchase.id }} completed on {{ purchase.date }}</h4>
+            <div class="grid grid-cols-4" v-for="product in products" :key="id">
+                <product :product="product"></product>
             </div>
-            <div v-else>
-                <p class="btn">Log In</p>
-            </div>
+            <span>{{ purchase.total }}</span>
         </div>
         <div>
-            <h4>Past Purchases</h4>
-            <div v-for="purchase in purchases" :key="id">
-                <purchase :purchase="purchase"></purchase>
-            </div>
-        </div>
-        <div>
-            <h4>Past Purchases</h4>
-            <div v-for="review in reviews" :key="id">
-                <review :review="review"></review>
-                
-            </div>
         </div>
     </div>
 </template>
