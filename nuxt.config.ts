@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', "nuxt-mdi"],
+  modules: ['@nuxtjs/tailwindcss', "nuxt-mdi", "nuxt-server-utils"],
   app: {
     head: {
       title: 'Bandito',
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   },
   runtimeConfig: {
-    connectionString: process.env.CONNECTION_STRING,
+    connectionString: process.env.MONGODB_URI,
 
   },
   // auth: {

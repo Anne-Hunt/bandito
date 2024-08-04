@@ -1,6 +1,5 @@
 export default defineEventHandler(() => {
 
-    return {
-        const { data } = $fetch
-    }
+    const { data } = await $fetch('connectionString')
+    return data
 })
