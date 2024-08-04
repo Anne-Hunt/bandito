@@ -6,7 +6,7 @@ definePageMeta({
 const {data: products} = await useFetch('/api/raccoon')
 
 useHead({ 
-    title: 'Bandito - Products and Merch'
+    title: 'Bandito - Disguises'
 })
 </script>
 
