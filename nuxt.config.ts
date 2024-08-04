@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   },
   runtimeConfig: {
-    connectionString: process.env.MONGODB_URI,
+    apiSecret: process.env.MONGODB_URI,
 
   },
   // auth: {
