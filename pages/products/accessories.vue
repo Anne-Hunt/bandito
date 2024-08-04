@@ -13,8 +13,8 @@ useHead({
 
 <template>
 <div>
-    <h2 class="text-xl font-bold">Products by Bandito</h2>
-    <p>Welcome to Bandito, the premier shopping site for all of raccoonkind.</p>
+    <h2 class="text-xl font-bold">Accessories by Bandito</h2>
+    <p>Toys and classy accessories for the raccoon of style.</p>
 </div>
 <div class="grid grid-cols-5 gap-5">
 <div v-for="product in products" :key="id">
