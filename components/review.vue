@@ -8,13 +8,15 @@ const {review} = defineProps(['review'])
 <div class="card text-center">
     <NuxtLink :to="`/products/${review.product.id}`" >
         <div class="thumbimg mb-2">
-            <img :src="product.image" :alt="product.title" class="thumbnail">
+            <img :src="review.product.image" :alt="review.product.title" class="thumbnail">
         </div>
-        <p class="truncate font-semibold text-slate-700 mb-4">{{ product.title }}</p>
-        <p class="decimal">${{ product.price }}</p>
-    </NuxtLink :to="`/products/${product.id}`">
-    <NuxtLink :to="`/products/${product.id}`" class="">
-        <p class="btn mt-4 mx-5">View item</p>
+        <p class="">{{ review.title }}</p>
+        <p class="truncate font-semibold text-slate-700 mb-4">{{ review.product.title }}</p>
+        <p>{{ review.rating }}</p>
+        <p class="decimal">${{ review.description }}</p>
+    </NuxtLink>
+    <NuxtLink :to="`/account/review/${review.id}`">
+        <button class="rounded-md shadow-md bg-green-700 text-white">Edit</button>
     </NuxtLink>
 </div>
 </template>
