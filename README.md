@@ -1,75 +1,38 @@
-# Nuxt 3 Minimal Starter
+# BANDITO
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+created by Anne Hunt
 
-## Setup
+Live Link: Not currently available
 
-Make sure to install the dependencies:
+Completed 2024
 
-```bash
-# npm
-npm install
+## DESCRIPTION
 
-# pnpm
-pnpm install
+Bandito is a NUXT.js project that simulates an online shopping experience for the superior five-fingered mammal, the raccoon. NUXT.js and access to a MongoDB database creates a rich shopping application with easy to use UI.
 
-# yarn
-yarn install
+## SKILLS
 
-# bun
-bun install
-```
+Javascript, HTML, CSS, Bootstrap 5, MVC design pattern, MongoDB, Mongoose, Typescript
 
-## Development Server
+## LANGUAGES
 
-Start the development server on `http://localhost:3000`:
+Javascript, Typescript, HTML, CSS
 
-```bash
-# npm
-npm run dev
+## REQUIREMENTS
 
-# pnpm
-pnpm run dev
+Application must:
 
-# yarn
-yarn dev
+- Allow users to open product pages
+- Utilize NUXT's routing system
+- Access product listings data on MongoDB
 
-# bun
-bun run dev
-```
+## STRETCH GOALS
 
-## Production
+Application may:
 
-Build the application for production:
+- Allow users to "purchase" items
+- Allow users to create accounts and see past "purchases"
 
-```bash
-# npm
-npm run build
+## FIGMA/UML
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Not currently available
